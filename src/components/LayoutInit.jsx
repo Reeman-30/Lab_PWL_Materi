@@ -7,7 +7,7 @@ export default function LayoutInit({ children }) {
     <div>
       <Headers />
 
-      <section>{children}</section>
+      <section className="container">{children}</section>
 
       <Footers />
     </div>
