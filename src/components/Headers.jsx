@@ -1,12 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Headers() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          Navbar
-        </a>
+        <NavLink className="navbar-brand" to={"/"}>
+          PWL | Web-Chat
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,14 +22,14 @@ export default function Headers() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/home">
-                Home
-              </a>
+              <NavLink className="nav-link" aria-current="page" to={"/"}>
+                Chapter-One
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Features
-              </a>
+              <NavLink className="nav-link" to={"chapter-two"}>
+                Chapter-Two
+              </NavLink>
             </li>
           </ul>
         </div>

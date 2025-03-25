@@ -51,23 +51,24 @@ export default function MessegersUI() {
   }, [myChat]);
 
   return (
-    <div class="card">
-      <div className="card-header">
+    <div className="card">
+      <div className="d-flex card-header justify-content-between">
         <h3 className="card-title align-items-start flex-column">
-          <span className="fw-bold mb-2">Chats</span>
+          <span className="fw-bold fs-5 text-secondary mb-2">Chats</span>
         </h3>
+        <div className="card-toolbar">
+          <ButtonSecondary
+            items={{
+              title: "Create new chat",
+              btn_class: "btn-icon btn-clear",
+            }}
+          >
+            <i className="bi bi-pencil-square"></i>
+          </ButtonSecondary>
+        </div>
       </div>
-      <div className="card-toolbar">
-        <ButtonSecondary
-          items={{
-            title: "Create new chat",
-            btn_class: "btn-icon btn-clear",
-          }}
-        >
-          <i className="bi bi-pencil-square"></i>
-        </ButtonSecondary>
-      </div>
-      <div class="card-body">
+
+      <div className="card-body">
         <div
           className="chat-message px-2 bg-light-primary"
           style={StylesMesseger.chatBox}
