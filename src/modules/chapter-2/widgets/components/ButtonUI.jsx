@@ -29,7 +29,7 @@ const renderTooltip = (props) => {
 const ButtonPrimary = ({ children, items, actions }) => {
   return (
     <button
-      className={"btn" + items.btn_class}
+      className={"btn " + items.btn_class}
       type={items.type ? items.type : "button"}
       title={items.title}
       onClick={actions}

@@ -56,8 +56,8 @@ export default function MessegersUI({ profile, selectedChat, selectedUser }) {
 
     const objChat = {
       id: 99,
-      message: writeChat,
-      from: "Febry",
+      messages: writeChat,
+      from_id: "0419029203",
       date: moment().format("YYYY-MMM-DD HH:mm"),
     };
     setMyChat([...myChat, objChat]);

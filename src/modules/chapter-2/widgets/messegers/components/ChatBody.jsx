@@ -2,7 +2,7 @@ import moment from "moment";
 import React from "react";
 
 export default function ChatBody({ data }) {
-  const itsme = "Febry";
+  const itsme = "0419029203";
   const listData = data;
 
   return (
@@ -16,12 +16,12 @@ export default function ChatBody({ data }) {
           <div
             className="chat text-white rounded my-2 p-2"
             style={
-              value.from === itsme
+              value.from_id === itsme
                 ? styleChatItems.chatBubleSender
                 : styleChatItems.chatBubleReceiver
             }
           >
-            <span className="me-3">{value.message}</span>
+            <span className="me-3">{value.messages}</span>
             <span className="chat-date" style={{ fontSize: "11px" }}>
               {moment(value.date).format("HH:mm")}
             </span>

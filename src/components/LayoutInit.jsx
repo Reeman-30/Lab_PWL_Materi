@@ -4,7 +4,7 @@ import Footers from "./Footers";
 
 export default function LayoutInit({ children }) {
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <Headers />
 
       <section className="container">{children}</section>
